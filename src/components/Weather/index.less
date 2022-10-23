@@ -1,0 +1,80 @@
+.weather {
+  color: #333339;
+  display: inline-block;
+  text-align: center;
+  padding: 40px;
+  font-weight: 100;
+
+  .title {
+    font-size: 30px;
+  }
+
+  .condition {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 100px;
+
+    i {
+      font-weight: 100;
+      color: #cdf0f0;
+      margin-right: 15px;
+    }
+
+    .degree {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-size: 60px;
+      font-family: fantasy;
+      font-weight: normal;
+
+      i {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+        color: black;
+      }
+    }
+
+    label {
+      font-size: 30px;
+    }
+  }
+}
+
+.small {
+  .title {
+    font-size: 25px;
+  }
+
+  .condition {
+    flex-direction: column;
+
+    i {
+      font-size: 70px;
+      margin-right: 15px;
+    }
+
+    .degree {
+      font-size: 40px;
+
+      i {
+        font-size: 15px;
+        margin-top: 13px;
+      }
+    }
+  }
+}
+
+.forecast {
+  >div {
+    border: 5px solid white;
+    border-left: none;
+    border-bottom: none;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
