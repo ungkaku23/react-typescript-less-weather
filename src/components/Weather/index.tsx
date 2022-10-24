@@ -19,9 +19,9 @@ class Weather extends React.Component<IWeatherProps> {
           {title}
         </span>
         <div className="condition">
-          <i className="fa-solid fa-cloud-drizzle"></i>
+          <i className="fa-duotone fa-cloud-showers-heavy" />
           <div className="d-flex flex-column">
-            <span className="degree">19<i className="fa-regular fa-circle-small"></i></span>
+            <span className="degree">19<span className="circle">o</span></span>
             {type === 'large' && <label>Clouds</label>}
           </div>
         </div>
