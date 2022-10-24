@@ -41,11 +41,11 @@ var server = new WebpackDevServer(compiler, {
 	}
 });
 
-server.listen(8080, 'localhost', function(err) {
+server.listen(3000, 'localhost', function(err) {
 	if (err) {
 		console.log(err);
 		return;
 	}
 
-	console.log("Listening at http://localhost:3333. Please wait, I'm building things for you...");
+	console.log("Listening at http://localhost:3000. Please wait, I'm building things for you...");
 });
