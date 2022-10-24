@@ -69,6 +69,13 @@ module.exports = {
 				options: {
 					sourceMap: true
 				}
+			},  {
+				loader: 'style-resources-loader',
+				options: {
+					patterns: [
+						path.resolve(__dirname, 'src/less/variables.less')
+					]
+				}
 			}]
 		}, {
 			test: /\.(jpg|png|woff|eot|ttf|svg|gif)$/,

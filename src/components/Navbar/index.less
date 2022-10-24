@@ -10,20 +10,19 @@
     display: inline-block;
 
     a {
-      font-size: 35px;
-      color: #333339;
+      color: @third-color !important;
       text-decoration: none;
       padding: 0 50px;
+      cursor: pointer;
       font-weight: 100;
 
       &:hover {
-        cursor: pointer;
-        color: #5fb0e8;
+        color: @secondary-color !important;
         font-weight: bold;
       }
 
       &.active {
-        color: #5fb0e8;
+        color: @secondary-color !important;
         font-weight: bold;
       }
     }

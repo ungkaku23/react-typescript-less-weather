@@ -4,13 +4,11 @@ import './index.less';
 class Navbar extends React.Component {
   public render() {
     return (
-      // <nav className='navbar'>
-        <ul className="navbar">
-          <li><a className="active" href="">OTTAWA</a></li>
-          <li><a href="">MOSCOW</a></li>
-          <li><a href="">TOKYO</a></li>
-        </ul>
-      // </nav>
+      <ul className="navbar">
+        <li><a className="active font-lg" href="#">OTTAWA</a></li>
+        <li><a className="font-lg" href="#">MOSCOW</a></li>
+        <li><a className="font-lg" href="#">TOKYO</a></li>
+      </ul>
     );
   }
 }

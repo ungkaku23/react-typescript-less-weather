@@ -1,5 +1,5 @@
 .weather {
-  color: #333339;
+  color: @third-color;
   display: inline-block;
   text-align: center;
   padding: 40px;
@@ -15,10 +15,10 @@
     padding-top: 10px;
     font-size: 100px;
 
-    i {
+    > i {
       font-weight: 100;
-      color: #cdf0f0;
       margin-right: 15px;
+      color: @cloud-color;
     }
 
     .degree {
@@ -26,8 +26,13 @@
       justify-content: flex-start;
       align-items: flex-start;
       font-size: 60px;
-      font-family: fantasy;
+      font-family: "Odibee Sans", sans-serif !important;
       font-weight: normal;
+
+      .circle {
+        font-size: 30px !important;
+        margin-top: 6px !important;
+      }
 
       i {
         font-size: 20px;
@@ -39,6 +44,7 @@
 
     label {
       font-size: 30px;
+      margin-top: -15px;
     }
   }
 }
@@ -51,30 +57,40 @@
   .condition {
     flex-direction: column;
 
-    i {
+    > i {
       font-size: 70px;
-      margin-right: 15px;
+      margin-top: 10px;
+      margin-bottom: 15px;
     }
 
     .degree {
       font-size: 40px;
 
+      .circle {
+        font-size: 25px !important;
+        margin-top: 1px !important;
+      }
+
       i {
         font-size: 15px;
-        margin-top: 13px;
+        margin-top: 6px;
       }
     }
   }
 }
 
 .forecast {
-  >div {
+  > div {
     border: 5px solid white;
-    border-left: none;
-    border-bottom: none;
 
-    &:last-child {
-      border-right: none;
+    @media (min-width: 768px) {
+      border-left: none;
+
+      &:last-child {
+        border-right: none;
+      }
     }
+
+    border-bottom: none;
   }
 }
